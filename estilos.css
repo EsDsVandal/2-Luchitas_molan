@@ -1,0 +1,29 @@
+/* estilos.css */
+
+@font-face {
+    font-family: 'digital';
+    src: url('fonts/DS-DIGIT.TTF');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: rgb(233, 2, 2);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 75px;
+}
+
+#countdown {
+    font-family: 'digital';
+    font-size: 125px;
+    margin-top: 1rem;
+}
