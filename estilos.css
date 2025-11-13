@@ -1,5 +1,3 @@
-/* estilos.css */
-
 @font-face {
     font-family: 'digital';
     src: url('fonts/DS-DIGIT.TTF');
@@ -16,14 +14,37 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
+/* Fecha del evento */
 h2 {
-    font-size: 75px;
+    font-size: clamp(2rem, 5vw, 75px);
+    margin: 0.5rem 0;
 }
 
+/* Contador digital */
 #countdown {
     font-family: 'digital';
-    font-size: 125px;
+    font-size: clamp(3rem, 12vw, 125px);
     margin-top: 1rem;
+    word-spacing: 0.5rem;
+    line-height: 1.1;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: clamp(1.8rem, 6vw, 60px);
+    }
+
+    #countdown {
+        font-size: clamp(3.5rem, 14vw, 100px);
+        word-spacing: 0.3rem;
+    }
 }
